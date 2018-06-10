@@ -1,3 +1,10 @@
 E:\BenoyInsurance\BenoyInsPortal.Web\obj\Debug\netcoreapp2.0\BenoyInsPortal.Web.csproj.CoreCompileInputs.cache
 E:\BenoyInsurance\BenoyInsPortal.Web\obj\Debug\netcoreapp2.0\BenoyInsPortal.Web.AssemblyInfoInputs.cache
 E:\BenoyInsurance\BenoyInsPortal.Web\obj\Debug\netcoreapp2.0\BenoyInsPortal.Web.AssemblyInfo.cs
+E:\BenoyInsurance\BenoyInsPortal.Web\bin\Debug\netcoreapp2.0\BenoyInsPortal.Web.deps.json
+E:\BenoyInsurance\BenoyInsPortal.Web\bin\Debug\netcoreapp2.0\BenoyInsPortal.Web.runtimeconfig.json
+E:\BenoyInsurance\BenoyInsPortal.Web\bin\Debug\netcoreapp2.0\BenoyInsPortal.Web.runtimeconfig.dev.json
+E:\BenoyInsurance\BenoyInsPortal.Web\bin\Debug\netcoreapp2.0\BenoyInsPortal.Web.dll
+E:\BenoyInsurance\BenoyInsPortal.Web\bin\Debug\netcoreapp2.0\BenoyInsPortal.Web.pdb
+E:\BenoyInsurance\BenoyInsPortal.Web\obj\Debug\netcoreapp2.0\BenoyInsPortal.Web.dll
+E:\BenoyInsurance\BenoyInsPortal.Web\obj\Debug\netcoreapp2.0\BenoyInsPortal.Web.pdb
