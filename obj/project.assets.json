@@ -14763,11 +14763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\BenoyInsurance\\BenoyInsPortal.Web\\BenoyInsPortal.Web.csproj",
+      "projectUniqueName": "E:\\BenoyInsurance\\BenoyInsPortal.Web\\BenoyInsPortal.Web.csproj",
       "projectName": "BenoyInsPortal.Web",
-      "projectPath": "e:\\BenoyInsurance\\BenoyInsPortal.Web\\BenoyInsPortal.Web.csproj",
+      "projectPath": "E:\\BenoyInsurance\\BenoyInsPortal.Web\\BenoyInsPortal.Web.csproj",
       "packagesPath": "C:\\Users\\derek\\.nuget\\packages\\",
-      "outputPath": "e:\\BenoyInsurance\\BenoyInsPortal.Web\\obj\\",
+      "outputPath": "E:\\BenoyInsurance\\BenoyInsPortal.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
