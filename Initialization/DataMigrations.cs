@@ -17,8 +17,6 @@
         private static string[] databaseKeys = new[] {
             "Default"
             //<if:Northwind>
-            , "Northwind"
-            //</if:Northwind>
         };
 
         public static void Initialize()
@@ -184,15 +182,6 @@
             bool isOracle = serverType.StartsWith("Oracle", StringComparison.OrdinalIgnoreCase);
             bool isFirebird = serverType.StartsWith("Firebird", StringComparison.OrdinalIgnoreCase);
 
-            // safety check to ensure that we are not modifying an arbitrary database.
-            // remove these lines if you want BenoyInsPortal migrations to run on your DB.
-            if (!isOracle && cs.ConnectionString.IndexOf(typeof(DataMigrations).Namespace +
-                    @"_" + databaseKey + "_v1", StringComparison.OrdinalIgnoreCase) < 0)
-            {
-                SkippedMigrations = true;
-                return;
-            }
-
             string databaseType = isOracle ? "OracleManaged" : serverType;
 
             using (var sw = new StringWriter())
@@ -205,11 +194,11 @@
                 {
                     Database = databaseType,
                     Connection = cs.ConnectionString,
-#if COREFX
+                #if COREFX
                     TargetAssemblies = new[] { typeof(DataMigrations).Assembly },
-#else
+                #else
                     Targets = new string[] { typeof(DataMigrations).Assembly.Location },
-#endif
+                #endif
                     Task = "migrate:up",
                     WorkingDirectory = Path.GetDirectoryName(typeof(DataMigrations).Assembly.Location),
                     Namespace = "BenoyInsPortal.Migrations." + databaseKey + "DB",
@@ -224,9 +213,9 @@
 
                     new TaskExecutor(runner)
                     {
-#if COREFX
+                    #if COREFX
                         ConnectionString = cs.ConnectionString
-#endif
+                    #endif
                     }.Execute();
                 }
                 catch (Exception ex)

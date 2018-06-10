@@ -96,14 +96,14 @@ namespace BenoyInsPortal.Migrations
 
             migration.IfDatabase("Oracle")
                 .Execute.Sql(String.Format(@"
-CREATE OR REPLACE TRIGGER {2}_TRG
-BEFORE INSERT ON {0}
-FOR EACH ROW
-BEGIN
-	IF :new.{1} IS NULL THEN
-		SELECT {2}.nextval INTO :new.{1} FROM DUAL;
-	END IF;
-END;", table, id, seq));
+                    CREATE OR REPLACE TRIGGER {2}_TRG
+                    BEFORE INSERT ON {0}
+                    FOR EACH ROW
+                    BEGIN
+                        IF :new.{1} IS NULL THEN
+                            SELECT {2}.nextval INTO :new.{1} FROM DUAL;
+                        END IF;
+                    END;", table, id, seq));
 
             migration.IfDatabase("Oracle")
                 .Execute.Sql(@"ALTER TRIGGER " + seq + "_TRG ENABLE");
